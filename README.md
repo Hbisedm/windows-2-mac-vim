@@ -26,7 +26,7 @@ cygwin   安装时选个zsh
 - cygwin/zsh/on-my-zsh/p10k
 - [字体](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k)
 
-![[2.png]]
+![[./assets/2.png]]
 
 ## 配置输入法-rime
 
@@ -83,5 +83,5 @@ ignore_minimal = no
 
 vim配置
 
-- [settings.json](../assets/settings.json)
-- [keysbindings.json](../assets/keysbindings.json)
+- [settings.json](./assets/settings.json)
+- [keysbindings.json](./assets/keysbindings.json)

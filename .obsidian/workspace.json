@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95c5bd98806001fb",
+        "id": "00fe24cd1243c3c3",
         "type": "tabs",
         "children": [
           {
-            "id": "4e83915edfe7784e",
+            "id": "1324037da6864317",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cfebb60b9d62e5d2",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Note.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Note.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Note.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,14 +146,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4e83915edfe7784e",
+  "active": "1324037da6864317",
   "lastOpenFiles": [
+    "assets/2.png",
     "Note.md",
     "assets/keybindings.json",
     "assets/k.txt",
     "assets/新建 文本文档.txt",
     "assets/settings.json",
-    "assets/2.png",
     "Pasted image 20240611143958.png",
     "assets/maps.ahk",
     "assets/1.png",
