@@ -11,22 +11,38 @@
 
 一开始使用 `PowerToys` 进行改键，后发现太难用了，而且改的规则有很多[问题]( https://eli-ven.github.io/posts/shortcuts/)。后面改为使用[AutoHotkey](https://www.autohotkey.com/)进行改键。这是我的配置[配置](./assets/maps.ahk)。但是`PowerToys`里面的`PowerToys Run`功能很强大，我只使用3个插件， 提升我的工作开发效率：
 
-- ClipboardManager
-- Everything
-- Translator
+- [ClipboardManager](https://github.com/CoreyHayward/PowerToys-Run-ClipboardManager)
+- [Everything](https://github.com/lin-ycv/EverythingPowerToys)
+- [Translator](https://github.com/N0I0C0K/PowerTranslator)
 
-> 将软件放到开机启动目录下`{C:\Users\username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup}`
+> 将软件放到开机启动目录下`{C:\Users\${username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup}`
 
 ## 配置终端 
 
-cygwin   安装时选个zsh
+<strike>
+cygwin   安装时选个zsh 
+
 
 配置终端样式 
 
 - cygwin/zsh/on-my-zsh/p10k
 - [字体](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k)
+</strike>
 
 ![./assets/2.png](./assets/2.png)
+
+<strike>
+
+使用[PowerShell](https://github.com/PowerShell/PowerShell)配置[starship](https://github.com/starship/starship) 和windows自带的wsl 启动一个Ubuntu系统
+</strike>
+
+>  如果你使用的是 windows 自带的 powershell , 那么它的配置文件是C:\Users\<用户名>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 , 如果没有这个文件, 自己新建一个。如果你使用的不是系统自带的 powershell , 而是自己安装的 powershell, 例如 PowerShell/PowerShell, 那么配置文件在 C:\Users\<用户名>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+
+
+使用[tabby](https://github.com/eugeny/tabby)启动wsl的Ubuntu系统
+Ubuntu系统里面配置了oh-my-zsh
+
+
 
 ## 配置输入法-rime
 
@@ -87,6 +103,11 @@ vim配置
 - [keysbindings.json](./assets/keysbindings.json)
 
 
-## TODO
+## 软件管理器
 
-- https://ilaipi.com/archives/549
+choco
+
+> https://community.chocolatey.org/packages
+
+
+
