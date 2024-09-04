@@ -151,5 +151,6 @@ vsCode版本不一样，进程名不一样 (用户版本的vsCode 进程名为 `
 
 > 打开任务管理器查看进程名就行
 
+3. [Win11怎么删除输入法？](https://blog.csdn.net/xitongzhijianet/article/details/128419607)
 
 
