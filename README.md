@@ -39,6 +39,15 @@ cygwin   安装时选个zsh
 
 >  如果你使用的是 windows 自带的 powershell , 那么它的配置文件是C:\Users\<用户名>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 , 如果没有这个文件, 自己新建一个。如果你使用的不是系统自带的 powershell , 而是自己安装的 powershell, 例如 PowerShell/PowerShell, 那么配置文件在 C:\Users\<用户名>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 
+- 写入内容
+```ps1
+
+# starship
+Invoke-Expression (&starship init powershell)
+
+```
+
+- 现在的配置:
 
 使用[tabby](https://github.com/eugeny/tabby)启动wsl的Ubuntu系统
 Ubuntu系统里面配置了oh-my-zsh
@@ -102,7 +111,7 @@ ignore_minimal = no
 vim配置
 
 - [settings.json](./assets/settings.json)
-- [keysbindings.json](./assets/keysbindings.json)
+- [keybindings.json](./assets/keybindings.json)
 
 
 ## 软件管理器
@@ -113,9 +122,9 @@ choco
 
 ## Vscode 配置
 
-主题使用 插件`Evondev Dracula` 的 `Evondev Dracula Darker Contrast`
-编辑器字体使用 `FiraCode-Medium`
-终端字体使用 `FiraCode Nerd Font Propo`
+- 主题使用 插件`Evondev Dracula` 的 `Evondev Dracula Darker Contrast`
+- 编辑器字体使用 `FiraCode-Medium`
+- 终端字体使用 `FiraCode Nerd Font Propo`
 
 ## 问题
 
