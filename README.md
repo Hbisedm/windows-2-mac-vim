@@ -17,16 +17,17 @@
 
 > 将软件放到开机启动目录下`{C:\Users\${username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup}`
 
-## 配置终端 
+## 配置终端
 
 <strike>
-cygwin   安装时选个zsh 
+cygwin   安装时选个zsh
 
 
-配置终端样式 
+配置终端样式
 
 - cygwin/zsh/on-my-zsh/p10k
 - [字体](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k)
+
 </strike>
 
 ![./assets/2.png](./assets/2.png)
@@ -46,17 +47,17 @@ Ubuntu系统里面配置了oh-my-zsh
 
 ## 配置输入法-rime
 
-在 Windows 下的 rime（小狼毫）现在也可以配置 vim_mode 了。  
+在 Windows 下的 rime（小狼毫）现在也可以配置 vim_mode 了。
 
 为了使用切换应用后，可以切换对应的大小写模式。需要下载[每夜构建的版本](https://github.com/rime/weasel/releases/tag/latest)
 
-weasel.custom.yaml  
+weasel.custom.yaml
 ```yaml
-patch:  
-  'app_options/+':  
-    code.exe: # 这里是应用可执行文件的名字，带后缀  
-      inline_preedit: false # 在输入法中预编辑，防止 vscode vim 中输入法闪烁  
-      ascii_mode: true  
+patch:
+  'app_options/+':
+    code.exe: # 这里是应用可执行文件的名字，带后缀
+      inline_preedit: false # 在输入法中预编辑，防止 vscode vim 中输入法闪烁
+      ascii_mode: true
       vim_mode: true
 ```
 
@@ -69,7 +70,7 @@ patch:
 
 ```ini
 # Whether to show trayicon, yes/no
-trayicon = yes 
+trayicon = yes
 
 [switch-windows]
 
@@ -93,6 +94,7 @@ hotkey = alt+tab
 
 # Ignore minimal windows
 ignore_minimal = no
+
 ```
 
 ## VSCoode
@@ -108,6 +110,37 @@ vim配置
 choco
 
 > https://community.chocolatey.org/packages
+
+## Vscode 配置
+
+主题使用 插件`Evondev Dracula` 的 `Evondev Dracula Darker Contrast`
+编辑器字体使用 `FiraCode-Medium`
+终端字体使用 `FiraCode Nerd Font Propo`
+
+## 问题
+
+小狼毫输入法跟vscode的冲突
+
+1. vscode快捷键`ctrl + ,`设置为切换终端窗口, 和输入法的 切换符号冲突
+
+禁用对应输入法的`xxxx.key_bindings.yaml`这2行
+
+```yaml
+
+windows_compatible_mode_switch:
+  __append:
+    - { when: always, accept: Shift+space, toggle: full_shape }
+    # - { when: always, accept: Control+comma, toggle: ascii_punct }
+    # - { when: always, accept: Control+period, toggle: ascii_punct }
+    - { when: always, accept: Control+Shift+f, toggle: zh_simp_s2t }
+    - { when: always, accept: Control+Shift+F, toggle: zh_simp_s2t }
+```
+
+2. 小狼毫指定应用切换vim模式
+
+vsCode版本不一样，进程名不一样 (用户版本的vsCode 进程名为 `Code.exe`)
+
+> 打开任务管理器查看进程名就行
 
 
 
