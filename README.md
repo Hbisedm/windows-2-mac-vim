@@ -108,7 +108,9 @@ ignore_minimal = no
 
 ## VSCoode
 
-vim配置
+> 遇到切换资源管理器快捷键问题: https://github.com/microsoft/vscode/issues/178122#issuecomment-1480937036
+
+### vim配置
 
 - [settings.json](./assets/settings.json)
 - [keybindings.json](./assets/keybindings.json)
